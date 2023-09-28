@@ -10,33 +10,54 @@
 </head>
 <body>
     <div id="sidebar">
+        <div class="toggle-sidebar">
+            <i class="las la-bars"></i>
+        </div>
         <div class="logo">
             <img src="assets/images/logo.png" alt="Pablo Rivera">
         </div>
         <nav>
             <ul>
                 <li>
-                    <a href="#home" class="active"><i class="las la-home"></i></a>
+                    <a href="#home" class="active">
+                        <i class="las la-home"></i>
+                        <span>Home</span>
+                    </a>
                     <span>Home</span>
                 </li>
                 <li>
-                    <a href="#about"><i class="las la-address-card"></i></a>
+                    <a href="#about">
+                        <i class="las la-address-card"></i>
+                        <span>About</span>
+                    </a>
                     <span>About</span>
                 </li>
                 <li>
-                    <a href="#resume"><i class="las la-file"></i></a>
+                    <a href="#resume">
+                        <i class="las la-file"></i>
+                        <span>Resume</span>
+                    </a>
                     <span>Resume</span>
                 </li>
                 <li>
-                    <a href="#work"><i class="las la-briefcase"></i></a>
+                    <a href="#work">
+                        <i class="las la-briefcase"></i>
+                        <span>Work</span>
+                    </a>
                     <span>Work</span>
                 </li>
                 <li>
-                    <a href="#testimonial"><i class="las la-comment"></i></a>
+                    <a href="#testimonial">
+                        <i class="las la-comment"></i>
+                        <span>Testimonial</span>
+                    </a>
                     <span>Testimonial</span>
                 </li>
                 <li>
-                    <a href="#contact"><i class="las la-phone"></i></a>
+                    <a href="#contact">
+                        <i class="las la-phone"></i>
+                        <span>Contact</span>
+                    </a>
                     <span>Contact</span>
                 </li>
             </ul>
@@ -48,7 +69,56 @@
         </div>
     </div>
     <main>
-        <section id="home" class="active"></section>
+        <section id="home" class="active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 info">
+                        <img class="person-circle" src="assets/images/person-circle.png" alt="profile picture">
+                        <h1><span>New</span>Heading,</h1>
+                        <h2>Subheading</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nam sed venenatis tortor. Nullam posuere sem a molestie tincidunt. 
+                            Proin tempor elit risus, id vestibulum mi varius at. 
+                            Etiam elit ex, venenatis at turpis nec, mollis tempor arcu.
+                        </p>
+                        <a class="btn-custom-blue" href="#">Button</a>
+                        <div class="socials">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="lab la-linkedin-in"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="lab la-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="lab la-github"></i>
+                                        <span>Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="lab la-stack-overflow"></i>
+                                        <span>Stack Overflow</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 image">
+                        <img src="assets/images/person-home.jpg" alt="large profile">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="about"></section>
         <section id="resume"></section>
         <section id="work"></section>
