@@ -1,4 +1,8 @@
 #home {
+    background-image: url('../images/background-img.jpg');
+    background-repeat: no-repeat;
+    background-position: 50vw -24;
+
     .info {
         padding-top: 281px;
 
@@ -29,6 +33,7 @@
 
             ul {
                 display: flex;
+                flex-wrap: wrap;
                 list-style: none;
                 margin: 0;
                 padding: 0;
@@ -77,6 +82,7 @@
         
         img {
             border-radius: 8px;
+            max-width: 100%;
             transition: all 0.3s;
 
             &:hover {

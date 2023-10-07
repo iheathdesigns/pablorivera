@@ -37,6 +37,8 @@ main {
 }
 main > section {
   display: none;
+  padding-right: 114px;
+  padding-left: 114px;
 }
 main > section.active {
   display: block;
@@ -196,6 +198,11 @@ main > section.active {
   border-radius: 50%;
 }
 
+#home {
+  background-image: url("../images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 50vw -24;
+}
 #home .info {
   padding-top: 281px;
 }
@@ -221,6 +228,7 @@ main > section.active {
 }
 #home .info .socials ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -260,6 +268,7 @@ main > section.active {
 }
 #home .image img {
   border-radius: 8px;
+  max-width: 100%;
   transition: all 0.3s;
 }
 #home .image img:hover {
@@ -270,7 +279,19 @@ main > section.active {
   background: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  main > section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  #home .image {
+    justify-content: flex-start;
+    height: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
   #sidebar {
     background: black;
     padding-right: 60px;
@@ -298,8 +319,26 @@ main > section.active {
   #sidebar nav ul li > span {
     display: none;
   }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 26px;
+  }
   main {
     padding-left: 0;
     padding-top: 50px;
+  }
+  #home {
+    background-image: unset;
+  }
+  #home .info {
+    padding-top: 80px;
+  }
+  #home .info .socials {
+    margin-top: 70px;
+  }
+  #home .info .socials ul {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=main.css.map */
