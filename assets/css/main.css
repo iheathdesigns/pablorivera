@@ -97,9 +97,13 @@ main > section.active {
   right: -45px;
 }
 #sidebar .logo {
-  height: 20%;
+  height: 10%;
   padding-top: 62px;
   text-align: center;
+}
+#sidebar .logo img {
+  border-radius: 50%;
+  max-width: 150px;
 }
 #sidebar nav {
   height: 60%;
@@ -208,6 +212,8 @@ main > section.active {
 }
 #home .info img.person-circle {
   margin-bottom: 20px;
+  border-radius: 50%;
+  max-width: 50px;
 }
 #home .info h1 {
   margin-bottom: 24px;
@@ -261,7 +267,6 @@ main > section.active {
   transition: all 0.3s;
 }
 #home .image {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;

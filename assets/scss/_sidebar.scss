@@ -19,9 +19,14 @@
     }
 
     .logo {
-        height: 20%;
+        height: 10%;
         padding-top: 62px;
-        text-align: center;
+        text-align: center;        
+
+        img {
+            border-radius: 50%;
+            max-width: 150px;
+        }
     }
     nav {
         height: 60%;

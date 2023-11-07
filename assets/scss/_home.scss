@@ -8,6 +8,8 @@
 
         img.person-circle {
             margin-bottom: 20px;
+            border-radius: 50%;
+            max-width: 50px;
         }
 
         h1 {
@@ -75,7 +77,7 @@
     }
 
     .image {
-        height: 100vh;
+        // height: 100vh;
         display: flex;
         align-items: center;
         justify-content: flex-end;
