@@ -3,11 +3,25 @@ main {
 
     > section {
         display: none;
-        padding-right: 114px;
-        padding-left: 114px;
+        padding-right: 32px;
+        padding-left: 32px;
+
+        &:not(#home) {
+            padding-top: 64px;
+        }
 
         &.active {
             display: block;
+        }
+
+        header.has-bg {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 15px;
+                left: -72px;
+            }
         }
     }
 }
