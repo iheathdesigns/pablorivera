@@ -355,6 +355,7 @@ main > section header.has-bg img {
 #about header.custom {
   position: relative;
   text-align: center;
+  margin-bottom: 42px;
 }
 #about header.custom:before {
   content: "";
@@ -390,7 +391,7 @@ main > section header.has-bg img {
   width: 15px;
   height: 15px;
   border-radius: 4px;
-  background: #658DF2;
+  background: #1E1E20;
   transform: rotate(40deg);
 }
 #about .rate span:after {
@@ -399,8 +400,11 @@ main > section header.has-bg img {
   width: 15px;
   height: 15px;
   border-radius: 4px;
-  background: #658DF2;
+  background: #1E1E20;
   transform: rotate(50deg);
+}
+#about .rate span.fill:before, #about .rate span.fill:after {
+  background: #658DF2;
 }
 #about .languages-skills {
   margin-top: 126px;
@@ -408,12 +412,13 @@ main > section header.has-bg img {
 #about .languages-skills .languages-key-skills {
   padding-right: 160px;
 }
+#about .languages-skills .languages-key-skills .languages .items {
+  margin-bottom: 43px;
+}
 #about .languages-skills .languages-key-skills .languages .items .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 38px;
-  margin-bottom: 43px;
 }
 #about .languages-skills .languages-key-skills .languages .items .item:not(:last-child) {
   margin-bottom: 16px;
@@ -424,9 +429,6 @@ main > section header.has-bg img {
 #about .languages-skills .languages-key-skills .languages .items .item .info .level {
   color: #B6B7BA;
 }
-#about .languages-skills .languages-key-skills .key-skills .items {
-  margin-top: 53px;
-}
 #about .languages-skills .languages-key-skills .key-skills .items .item {
   display: flex;
   align-items: center;
@@ -436,7 +438,8 @@ main > section header.has-bg img {
   margin-bottom: 32px;
 }
 #about .languages-skills .web-skills .items {
-  margin-top: 42px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 #about .languages-skills .web-skills .items .item {
   position: relative;
@@ -486,6 +489,17 @@ main > section header.has-bg img {
 #about .languages-skills .web-skills .items .item .year {
   color: #FF9F76;
 }
+#about .certificates {
+  margin-top: 120px;
+  margin-bottom: 200px;
+}
+#about .certificates .items .item img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#about .certificates .items .item img:hover {
+  transform: scale(1.1);
+}
 
 #contact {
   background: black;
@@ -494,6 +508,11 @@ main > section header.has-bg img {
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px;
+  }
+}
+@media (max-width: 1199px) {
+  #about .languages-skills .languages-key-skills {
+    padding-right: 12px;
   }
 }
 @media (max-width: 991px) {
