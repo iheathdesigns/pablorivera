@@ -603,6 +603,12 @@ main > section header.custom h2 {
   color: #B6B7BA;
   max-width: 345px;
 }
+#resume .education {
+  padding-right: 34px;
+}
+#resume .experience {
+  padding-left: 34px;
+}
 
 #contact {
   background: black;
@@ -616,6 +622,9 @@ main > section header.custom h2 {
 @media (max-width: 1199px) {
   #about .languages-skills .languages-key-skills {
     padding-right: 12px;
+  }
+  #resume .experience {
+    margin-top: 100px;
   }
 }
 @media (max-width: 991px) {
@@ -688,5 +697,28 @@ main > section header.custom h2 {
   }
   #about .hero .info .buttons a:first-child {
     margin-bottom: 16px;
+  }
+  #resume .items .item {
+    position: relative;
+  }
+  #resume .items .item .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -23px;
+    z-index: 2;
+    margin-top: 0;
+    background: rgba(30, 30, 32, 0.75);
+  }
+  #resume .items .item .icon:before {
+    display: none;
+  }
+  #resume .items .item .box:before {
+    display: none;
+  }
+  #resume .education,
+  #resume .experience {
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
