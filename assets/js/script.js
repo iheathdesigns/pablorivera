@@ -14,3 +14,24 @@ navLinks.forEach((item) => {
 document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(){
     document.querySelector('#sidebar').classList.toggle('open')
 })
+
+const shuffleInstance = new Shuffle(document.querySelector('#work .work-items'), {
+    itemSelector: '.item'
+})
+
+const filterButtons = document.querySelectorAll('#work .filters button')
+
+filterButtons.forEach((item) => {
+    item.addEventListener('click', workFilter)
+})
+
+function workFilter() {
+    const clickedButton = event.currentTarget;
+    const clickedButtonGroup = clickedButton.getAttribute('data-group');
+    const activeButton = document.querySelector('#work .filters button.active');
+
+    activeButton.classList.remove('active');
+    clickedButton.classList.add('active');
+
+    shuffleInstance.filter(clickedButtonGroup)
+}

@@ -610,6 +610,16 @@ main > section header.custom h2 {
   padding-left: 34px;
 }
 
+#work .filters button {
+  background: #000;
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+#work .work-items .item .wrap img {
+  width: 100%;
+}
+
 #contact {
   background: black;
 }
