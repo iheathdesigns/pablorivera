@@ -655,6 +655,10 @@ main > section header.custom h2 {
   height: 95%;
   background: rgba(21, 21, 22, 0.8);
   border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
   z-index: 2;
 }
 #work .work-items .item .wrap img {
