@@ -145,6 +145,9 @@ main > section header.custom h2 {
   display: flex;
   flex-direction: column;
 }
+#sidebar.blur {
+  filter: blur(2px);
+}
 #sidebar .toggle-sidebar {
   position: absolute;
   font-size: 30px;
@@ -615,10 +618,13 @@ main > section header.custom h2 {
   padding-left: 34px;
 }
 
+#work.blur {
+  filter: blur(2px);
+}
 #work .filters {
   text-align: center;
   margin-top: 81px;
-  margin-bottom: 71px;
+  margin-bottom: 55px;
 }
 #work .filters button {
   background: transparent;
@@ -627,6 +633,7 @@ main > section header.custom h2 {
   padding: 8px 16px;
   margin-right: 8px;
   margin-left: 8px;
+  margin-bottom: 16px;
 }
 #work .filters button.active {
   color: #fff;
@@ -638,6 +645,13 @@ main > section header.custom h2 {
 }
 #work .work-items .item .wrap {
   position: relative;
+  overflow: hidden;
+}
+#work .work-items .item .wrap:hover:before {
+  transform: rotate(0deg);
+}
+#work .work-items .item .wrap:hover:after {
+  transform: translate(-50%, -50%) rotate(0deg);
 }
 #work .work-items .item .wrap:before {
   content: "";
@@ -647,6 +661,10 @@ main > section header.custom h2 {
   background: rgba(101, 141, 242, 0.6);
   border-radius: 8px;
   z-index: 1;
+  cursor: pointer;
+  transform: rotate(-100deg);
+  transform-origin: top left;
+  transition: all 0.3s;
 }
 #work .work-items .item .wrap:after {
   content: "View";
@@ -655,17 +673,91 @@ main > section header.custom h2 {
   height: 95%;
   background: rgba(21, 21, 22, 0.8);
   border-radius: 8px;
+  transform-origin: bottom left;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(100deg);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 3px;
   z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 #work .work-items .item .wrap img {
   width: 100%;
   opacity: 0.5;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.modal#workModal .modal-dialog {
+  max-width: 863px;
+}
+.modal#workModal .modal-dialog .modal-content {
+  background: #1E1E20;
+  padding: 32px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  position: static;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button {
+  position: absolute;
+  right: -23px;
+  top: -23px;
+  background: #151516;
+  font-style: 22px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button:hover {
+  background: #0b2c80;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body img {
+  width: 100%;
+  height: 532px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .left {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .left h2 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .left p {
+  color: #B6B7BA;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right {
+  padding-right: 0;
+  padding-left: 32px;
+  padding-top: 80px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right i {
+  font-style: 18px;
+  margin-right: 2px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right .value {
+  color: #B6B7BA;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right .project-link {
+  margin-top: 32px;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right .project-link a, .modal#workModal .modal-dialog .modal-content .modal-body .right .project-link i {
+  color: #658DF2;
+  text-decoration: none;
+}
+.modal#workModal .modal-dialog .modal-content .modal-body .right .project-link a:hover {
+  text-decoration: underline;
 }
 
 #contact {
@@ -691,6 +783,10 @@ main > section header.custom h2 {
     height: unset;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button {
+    right: 10px;
+    top: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -778,5 +874,15 @@ main > section header.custom h2 {
   #resume .experience {
     padding-right: 12px;
     padding-left: 12px;
+  }
+  .modal#workModal .modal-dialog .modal-content .modal-body img {
+    height: unset;
+  }
+  .modal#workModal .modal-dialog .modal-content .modal-body .left {
+    padding-right: 0;
+  }
+  .modal#workModal .modal-dialog .modal-content .modal-body .right {
+    padding-left: 0;
+    padding-top: 32px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
 
+    &.blur {
+        filter: blur(2px);
+    }
+
     .toggle-sidebar {
         position: absolute;
         font-size: 30px;
