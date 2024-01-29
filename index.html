@@ -69,7 +69,7 @@
         </div>
     </div>
     <main>
-        <section id="home" class="active">
+        <section id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 info">
@@ -406,7 +406,7 @@
             
             
         </section>
-        <section id="work" class="active">
+        <section id="work">
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/bg.jpg" alt="background image">
@@ -414,7 +414,7 @@
                 </header>
             </div>
             <div class="filters">
-                <button data-group="all active">
+                <button data-group="All" class="active">
                     <h4>All</h4>
                 </button>
                 <button data-group="Web Development">
@@ -546,7 +546,65 @@
             
         </section>
         <section id="testimonial"></section>
-        <section id="contact"></section>
+        <section id="contact"  class="active">
+            <div class="text-center">
+                <header class="has-bg">
+                    <img src="assets/images/bg.jpg" alt="background image">
+                    <h1>Contact</h1>
+                </header>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 form">
+                        <form>
+                            <div class="form-item">
+                                <label>Name</label>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="form-item">
+                                <label>Email</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form-item">
+                                <label>Subject</label>
+                                <input type="text" name="subject">
+                            </div>
+                            <div class="form-item">
+                                <label>Message</label>
+                                <textarea name="message"></textarea>
+                            </div>
+                            <div class="text-end">
+                                <button class="btn-custom-dark" type="submit">Send Message</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-lg-6 info">
+                        <div class="item">
+                            <i class="las la-phone"></i>
+                            <div class="text">
+                                <span class="title">Phone number:</span>
+                                <a href="#">1234567890</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="las la-envelope"></i>
+                            <div class="text">
+                                <span class="title">Email:</span>
+                                <a href="#">mail@mail.com</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="las la-map-marker-alt"></i>
+                            <div class="text">
+                                <span class="title">Location:</span>
+                                <p>123 Anywhere USA<br> FL 123456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
     <div class="modal fade" id="workModal" tabindex="-1">

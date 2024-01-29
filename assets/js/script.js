@@ -63,3 +63,18 @@ workModalElement.addEventListener('hide.bs.modal', function (event) {
     document.getElementById('work').classList.remove('blur');
     document.getElementById('sidebar').classList.remove('blur');
 })
+
+let contactFormItems = document.querySelectorAll('#contact .form input, #contact .form textarea');
+
+contactFormItems.forEach((item) => {
+    item.addEventListener('focus', function() {
+        item.parentElement.classList.add('focus')
+    })
+
+    item.addEventListener('blur', function() {
+        if(!item.value) {
+            item.parentElement.classList.remove('focus')
+        }
+        
+    })
+})
