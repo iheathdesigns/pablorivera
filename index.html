@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#home" class="inner-link">
+                    <a href="#home" class="inner-link active">
                         <i class="las la-home"></i>
                         <span>Home</span>
                     </a>
@@ -40,7 +40,7 @@
                     <span>Resume</span>
                 </li>
                 <li>
-                    <a href="#work" class="inner-link active">
+                    <a href="#work" class="inner-link">
                         <i class="las la-briefcase"></i>
                         <span>Work</span>
                     </a>
@@ -63,13 +63,13 @@
             </ul>
         </nav>
         <div class="toggle-mode">
-            <div class="outer">
+            <div class="outer" onclick="toggleMode()">
                 <div class="inner"></div>
             </div>
         </div>
     </div>
     <main>
-        <section id="home">
+        <section id="home" class="active">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 info">
@@ -546,7 +546,7 @@
             
         </section>
         <section id="testimonial"></section>
-        <section id="contact"  class="active">
+        <section id="contact">
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/bg.jpg" alt="background image">

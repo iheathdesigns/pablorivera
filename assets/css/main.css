@@ -49,10 +49,15 @@ p {
 body {
   background: #151516;
   font-family: "Ubuntu", sans-serif;
+  transition: background 0.3s;
 }
 
 * {
   color: white;
+}
+
+html {
+  --bg-shape: url("../images/bg-shape.png");
 }
 
 main {
@@ -244,6 +249,8 @@ main > section header.custom h2 {
   height: 35px;
   background: #1E1E20;
   border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 #sidebar .toggle-mode .outer .inner {
   position: relative;
@@ -254,6 +261,7 @@ main > section header.custom h2 {
   margin-right: auto;
   margin-left: auto;
   margin-top: 16px;
+  transition: all 0.3s;
 }
 #sidebar .toggle-mode .outer .inner:before {
   position: absolute;
@@ -264,10 +272,11 @@ main > section header.custom h2 {
   top: -4px;
   left: 3px;
   border-radius: 50%;
+  transition: all 0.3s;
 }
 
 #home {
-  background-image: url("../images/background-img.jpg");
+  background-image: var(--bg-shape);
   background-repeat: no-repeat;
   background-position: 50vw -24;
 }
@@ -513,7 +522,7 @@ main > section header.custom h2 {
 
 #resume {
   padding-bottom: 115px;
-  background-image: url(../images/bg-shape.png);
+  background-image: var(--bg-shape);
   background-repeat: no-repeat;
   background-position: 40vw 374px;
 }
@@ -762,7 +771,7 @@ main > section header.custom h2 {
 }
 
 #contact {
-  background-image: url(.../images/bg-shape.png);
+  background-image: var(--bg-shape);
   background-repeat: no-repeat;
   background-position: 53vw 574px;
   min-height: 100vh;
@@ -995,4 +1004,51 @@ main > section header.custom h2 {
   #contact .container .info .item br {
     display: none;
   }
+}
+html[theme=light] {
+  --bg-shape: url("../images/bg-shape-light.png");
+}
+html[theme=light] body {
+  background: #fff;
+}
+html[theme=light] * {
+  color: #0D0D0D;
+}
+html[theme=light] .btn-custom-blue, html[theme=light] .btn-custom-dark {
+  background: #E9EFFF;
+  color: #658DF2;
+}
+html[theme=light] #sidebar nav ul li a:hover i {
+  color: #0D0D0D;
+}
+html[theme=light] #sidebar nav ul li a i {
+  color: #83848E;
+}
+html[theme=light] #sidebar nav ul li > span {
+  background: #F4F4F8;
+}
+html[theme=light] #sidebar .toggle-mode .outer {
+  background: #F4F4F8;
+}
+html[theme=light] #sidebar .toggle-mode .outer .inner {
+  margin-top: 5px;
+}
+html[theme=light] #sidebar .toggle-mode .outer .inner:before {
+  background: #F4F4F8;
+  opacity: 0;
+}
+html[theme=light] #home .info h1 span {
+  color: #83848E;
+}
+html[theme=light] #home .info .field h2 {
+  color: #83848E;
+}
+html[theme=light] #home .info .socials ul li a:hover {
+  background: #F4F4F8;
+}
+html[theme=light] #home .info .socials ul li a:hover i, html[theme=light] #home .info .socials ul li a:hover span {
+  color: #0D0D0D;
+}
+html[theme=light] #home .info .socials ul li a i, html[theme=light] #home .info .socials ul li a span {
+  color: #83848E;
 }/*# sourceMappingURL=main.css.map */
