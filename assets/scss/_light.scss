@@ -14,6 +14,23 @@ html[theme="light"] {
         color: $primary;
     }
 
+    .btn-custom-dark {
+        background: $secondary_gray_light;
+        color: $paragraph_light;
+    }
+
+    main > section {
+        header.custom {
+            &:before {
+                background: $secondary_gray_light;
+            }
+
+            h2 {
+                background: #fff;
+            }
+        }
+    }
+
     #sidebar {
         // .logo img {
         //     filter: invert(1);
@@ -73,6 +90,199 @@ html[theme="light"] {
                 }
             }
             
+        }
+    }
+
+    #about {
+        .rate span:not(.fill) {
+
+            &:after, 
+            &:before {
+                background: $gray_light;
+            }
+        }
+
+        .hero .info {
+            h2 {
+                color: $gray_light;
+            }
+
+            p {
+                color: $paragraph_light;
+            }
+
+            .items .item .value {
+                color: $gray_light;
+            }
+        }
+
+        .languages-skills .languages-key-skills .languages .items .item .info .level {
+            color: $gray_light;
+        }
+
+        .languages-skills .web-skills .items .item {
+            background: $secondary_gray_light;
+
+            &:after,
+            &:before {
+                background: lighten($primary, 20%);
+            }
+
+            .year {
+                color: $gray_light;
+            }
+        }
+    }
+
+    #resume {
+        .items .item {
+            &:hover {
+                .icon {
+                    background: lighten($primary, 25%);
+
+                    &:before {
+                        background: lighten($primary, 25%);
+                    }
+                }
+
+                .box {
+                    &:before {
+                        border-right-color: lighten($primary, 25%);
+                    }
+
+                    &:after {
+                        background: lighten($primary, 25%);
+                    }
+                }
+            }
+
+            .icon {
+                background: $secondary_gray_light;
+
+                &:before {
+                    background: darken($secondary_gray_light, 5%);
+                }
+            }
+
+            .box {
+                background: rgba($secondary_gray_light, 0.8);
+
+                &:before {
+                    border-right-color: rgba($secondary_gray_light, 0.8);
+                }
+
+                p {
+                    color: $gray_light;
+                }
+            }
+        }
+    }
+
+    #work {
+        .filters {
+            button {
+                &.active {
+                    background: $secondary_gray_light;
+
+                    h4 {
+                        color: $paragraph_light;
+                    }
+                }
+
+                h4 {
+                    color: $gray_light;
+                }
+            }
+        }
+
+        .work-items .item .wrap:after {
+            background: rgba(#ffffff, 0.8);
+        }
+    }
+
+    .modal#workModal {
+        .modal-dialog .modal-content {
+            background: #fff;
+
+            .modal-body {
+                .modal-close-button {
+                    background: $secondary_gray_light;
+
+                    &:hover {
+                        background: $primary;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .left p {
+                    color: $gray_light;
+                }
+
+                .right .value {
+                    color: $gray_light;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .container {
+            .form {
+                .form-item {
+                    &:before {
+                        background: $secondary_gray_light;
+                    }
+    
+                    &:after {
+                        background: $primary;
+                    }
+    
+                    label {
+                        color: $gray_light;
+                    }
+                }
+            }
+
+            .info {
+                .item {
+                    &:hover {
+                        i {
+                            background: $primary;
+                            color: #fff;
+                        }
+                    }
+
+                    i {
+                        background: $secondary_gray_light;
+                    }
+
+                    .text {
+                        .title {
+                            color: $gray_light;
+                        }
+
+                        a {
+                            color: $paragraph_light;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 767px) {
+    html[theme="light"] {
+        #sidebar {
+            background: lighten($primary, 25%);
+
+            .toggle-sidebar {
+                background: lighten($primary, 25%);
+            }
         }
     }
 }

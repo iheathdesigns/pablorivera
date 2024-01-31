@@ -1018,6 +1018,16 @@ html[theme=light] .btn-custom-blue, html[theme=light] .btn-custom-dark {
   background: #E9EFFF;
   color: #658DF2;
 }
+html[theme=light] .btn-custom-dark {
+  background: #F4F4F8;
+  color: #0D0D0D;
+}
+html[theme=light] main > section header.custom:before {
+  background: #F4F4F8;
+}
+html[theme=light] main > section header.custom h2 {
+  background: #fff;
+}
 html[theme=light] #sidebar nav ul li a:hover i {
   color: #0D0D0D;
 }
@@ -1051,4 +1061,116 @@ html[theme=light] #home .info .socials ul li a:hover i, html[theme=light] #home 
 }
 html[theme=light] #home .info .socials ul li a i, html[theme=light] #home .info .socials ul li a span {
   color: #83848E;
+}
+html[theme=light] #about .rate span:not(.fill):after, html[theme=light] #about .rate span:not(.fill):before {
+  background: #83848E;
+}
+html[theme=light] #about .hero .info h2 {
+  color: #83848E;
+}
+html[theme=light] #about .hero .info p {
+  color: #0D0D0D;
+}
+html[theme=light] #about .hero .info .items .item .value {
+  color: #83848E;
+}
+html[theme=light] #about .languages-skills .languages-key-skills .languages .items .item .info .level {
+  color: #83848E;
+}
+html[theme=light] #about .languages-skills .web-skills .items .item {
+  background: #F4F4F8;
+}
+html[theme=light] #about .languages-skills .web-skills .items .item:after, html[theme=light] #about .languages-skills .web-skills .items .item:before {
+  background: #c3d3fa;
+}
+html[theme=light] #about .languages-skills .web-skills .items .item .year {
+  color: #83848E;
+}
+html[theme=light] #resume .items .item:hover .icon {
+  background: #dbe4fc;
+}
+html[theme=light] #resume .items .item:hover .icon:before {
+  background: #dbe4fc;
+}
+html[theme=light] #resume .items .item:hover .box:before {
+  border-right-color: #dbe4fc;
+}
+html[theme=light] #resume .items .item:hover .box:after {
+  background: #dbe4fc;
+}
+html[theme=light] #resume .items .item .icon {
+  background: #F4F4F8;
+}
+html[theme=light] #resume .items .item .icon:before {
+  background: #e4e4ee;
+}
+html[theme=light] #resume .items .item .box {
+  background: rgba(244, 244, 248, 0.8);
+}
+html[theme=light] #resume .items .item .box:before {
+  border-right-color: rgba(244, 244, 248, 0.8);
+}
+html[theme=light] #resume .items .item .box p {
+  color: #83848E;
+}
+html[theme=light] #work .filters button.active {
+  background: #F4F4F8;
+}
+html[theme=light] #work .filters button.active h4 {
+  color: #0D0D0D;
+}
+html[theme=light] #work .filters button h4 {
+  color: #83848E;
+}
+html[theme=light] #work .work-items .item .wrap:after {
+  background: rgba(255, 255, 255, 0.8);
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content {
+  background: #fff;
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button {
+  background: #F4F4F8;
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button:hover {
+  background: #658DF2;
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button:hover i {
+  color: #fff;
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .left p {
+  color: #83848E;
+}
+html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .right .value {
+  color: #83848E;
+}
+html[theme=light] #contact .container .form .form-item:before {
+  background: #F4F4F8;
+}
+html[theme=light] #contact .container .form .form-item:after {
+  background: #658DF2;
+}
+html[theme=light] #contact .container .form .form-item label {
+  color: #83848E;
+}
+html[theme=light] #contact .container .info .item:hover i {
+  background: #658DF2;
+  color: #fff;
+}
+html[theme=light] #contact .container .info .item i {
+  background: #F4F4F8;
+}
+html[theme=light] #contact .container .info .item .text .title {
+  color: #83848E;
+}
+html[theme=light] #contact .container .info .item .text a {
+  color: #0D0D0D;
+}
+
+@media (max-width: 767px) {
+  html[theme=light] #sidebar {
+    background: #dbe4fc;
+  }
+  html[theme=light] #sidebar .toggle-sidebar {
+    background: #dbe4fc;
+  }
 }/*# sourceMappingURL=main.css.map */
