@@ -150,6 +150,7 @@ main > section header.custom h2 {
   padding-left: 39px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 #sidebar.blur {
   filter: blur(2px);

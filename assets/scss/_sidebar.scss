@@ -5,6 +5,7 @@
     padding-left: 39px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 
     &.blur {
         filter: blur(2px);
