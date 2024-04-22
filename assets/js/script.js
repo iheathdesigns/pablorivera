@@ -26,7 +26,7 @@ filterButtons.forEach((item) => {
 })
 
 function workFilter() {
-    const clickedButton = event.currentTarget;
+    const clickedButton = Event.currentTarget;
     const clickedButtonGroup = clickedButton.getAttribute('data-group');
     const activeButton = document.querySelector('#work .filters button.active');
 
